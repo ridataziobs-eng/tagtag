@@ -1,0 +1,106 @@
+{
+    
+    "data": [
+        {
+            "img": "user-33.png",
+            "giftCard": "GFT1110",
+            "customer": "Carl Evans",
+            "issuedDate": "24 Dec 2024",
+            "expiryDate": "24 Jan 2025",
+            "amount": "$200",
+            "balance": "$100",
+            "status": "Active"
+        },
+        {
+            "img": "user-02.jpg",
+            "giftCard": "GFT1109",
+            "customer": "Minerva Rameriz",
+            "issuedDate": "10 Dec 2024",
+            "expiryDate": "10 Jan 2025",
+            "amount": "$300",
+            "balance": "$200",
+            "status": "Active"
+        },
+        {
+            "img": "user-34.jpg",
+            "giftCard": "GFT1108",
+            "customer": "Robert Lamon",
+            "issuedDate": "27 Nov 2024",
+            "expiryDate": "27 Dec 2024",
+            "amount": "$200",
+            "balance": "$150",
+            "status": "Active"
+        },
+        {
+            "img": "user-35.jpg",
+            "giftCard": "GFT1107",
+            "customer": "Patricia Lewis",
+            "issuedDate": "18 Nov 2024",
+            "expiryDate": "18 Dec 2024",
+            "amount": "$120",
+            "balance": "$0",
+            "status": "Redeemed"
+        },
+        {
+            "img": "user-36.jpg",
+            "giftCard": "GFT1106",
+            "customer": "Mark Joslyn",
+            "issuedDate": "06 Nov 2024",
+            "expiryDate": "06 Dec 2024",
+            "amount": "$350",
+            "balance": "$300",
+            "status": "Active"
+        },
+        {
+            "img": "user-37.jpg",
+            "giftCard": "GFT1105",
+            "customer": "Marsha Betts",
+            "issuedDate": "25 Oct 2024",
+            "expiryDate": "25 Nov 2024",
+            "amount": "$500",
+            "balance": "$400",
+            "status": "Active"
+        },
+        {
+            "img": "user-28.jpg",
+            "giftCard": "GFT1104",
+            "customer": "Daniel Jude",
+            "issuedDate": "14 Oct 2024",
+            "expiryDate": "14 Nov 2024",
+            "amount": "$220",
+            "balance": "$150",
+            "status": "Active"
+        },
+        {
+            "img": "user-38.jpg",
+            "giftCard": "GFT1103",
+            "customer": "Emma Bates",
+            "issuedDate": "03 Oct 2024",
+            "expiryDate": "03 Nov 2024",
+            "amount": "$260",
+            "balance": "$220",
+            "status": "Inactive"
+        },
+        {
+            "img": "user-39.jpg",
+            "giftCard": "GFT1102",
+            "customer": "Richard Fralick",
+            "issuedDate": "20 Sep 2024",
+            "expiryDate": "20 Oct 2024",
+            "amount": "$200",
+            "balance": "$160",
+            "status": "Active"
+        },
+        {
+            "img": "user-40.jpg",
+            "giftCard": "GFT1101",
+            "customer": "Michelle Robison",
+            "issuedDate": "10 Sep 2024",
+            "expiryDate": "10 Oct 2024",
+            "amount": "$400",
+            "balance": "$350",
+            "status": "Expired"
+        }
+    ],
+    "totalData": 10
+}

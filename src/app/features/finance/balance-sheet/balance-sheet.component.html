@@ -1,0 +1,92 @@
+<div class="page-header">
+    <div class="add-item d-flex">
+        <div class="page-title">
+            <h4 class="fw-bold">Balance Sheet</h4>
+            <h6>View Your Balance Sheet </h6>
+        </div>
+    </div>
+    <ul class="table-top-head">
+        <li>
+            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Pdf"><img src="assets/img/icons/pdf.svg" alt="img"></a>
+        </li>
+        <li>
+            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Excel"><img src="assets/img/icons/excel.svg" alt="img"></a>
+        </li>
+        <li>
+          <a data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh"><i  class="ti ti-refresh"></i></a>
+        </li>
+        <li>
+          <a (click)="toggleCollapse()" [class.active]="isCollapsed" data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header" matTooltip="Collapse"> @if (!isCollapsed) {
+            <i class="ti ti-chevron-up"></i>
+          }
+          @if (isCollapsed) {
+            <i class="ti ti-chevron-up"></i>
+          }</a>
+        </li>
+    </ul>
+</div>
+
+<!-- /product list -->
+<div class="card table-list-card">
+    <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+        <div class="search-set">
+            <div class="search-input">
+				<a href="javascript:void(0);" class="btn btn-searchset"><i  class="feather icon-search feather-search"></i></a>
+				<div class="dataTables_filter">
+				  <label>
+					<input
+					  [(ngModel)]="searchDataValue" [ngModelOptions]="{standalone: true}"
+					  (ngModelChange)="searchData(searchDataValue)"
+					  type="search"
+					  class="form-control"
+					  placeholder="Search"
+					  />
+					</label>
+				  </div>
+				</div>
+        </div>
+       
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+          <table class="table  datanew" (matSortChange)="sortData($event)" matSort matSortActive="Sno"
+            matSortDirection="asc" matSortDisableClear>
+            <thead class="thead-light">
+              <tr>
+                <th mat-sort-header="product">Name</th>
+                <th mat-sort-header="expense">Bank & Account Number</th>
+                <th mat-sort-header="category">Credit</th>
+                <th mat-sort-header="describtion">Debit</th>
+                <th mat-sort-header="date">Balance</th>
+              </tr>
+            </thead>
+            <tbody class="Expense-list-blk">
+              @for (data of tableData; track data; let i = $index) {
+                <tr>
+                    <td class="p-3">{{data.name}}</td>
+                    <td class="p-3">{{data.bankAccount}}</td>
+                    <td class="p-3">{{data.credit}}</td>
+                    <td class="p-3">{{data.debit}}</td>
+                    <td class="p-3">{{data.balance}}</td>
+                  </tr>  
+                }@if(tableData.length === 0){
+                  <tr>
+                    <td class="text-center" colspan="12">No Matching Data Found</td>
+                  </tr>
+                }
+              <tr>
+                <td class="bg-secondary-transparent fs-16 fw-bold p-2 px-3">Total</td>
+                <td class="bg-secondary-transparent fs-16 fw-bold p-2 px-3"></td>
+                <td class="bg-secondary-transparent fs-16 fw-bold p-2 px-3">332642.53</td>
+                <td class="bg-secondary-transparent fs-16 fw-bold p-2 px-3">-16590.96</td>
+                <td class="bg-secondary-transparent fs-16 fw-bold p-2 px-3">332687442.53</td>
+              </tr>
+    
+            </tbody>
+          </table>
+    
+        </div>
+        <app-custom-pagination></app-custom-pagination>
+      </div>
+</div>
+<!-- /product list -->

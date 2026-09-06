@@ -1,0 +1,115 @@
+{
+  "data": [
+    {
+      "productName": "Lenovo IdeaPad 3",
+      "productImage": "stock-img-01.png",
+      "name": "James Kirwin",
+      "avatar": "user-30.jpg",
+      "review": "Sleek design and excellent battery life",
+      "rating": 5,
+      "date": "24 Dec 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Beats Pro",
+      "productImage": "stock-img-06.png",
+      "name": "Francis Chang",
+      "avatar": "user-13.jpg",
+      "review": "Crystal-clear sound and deep bass",
+      "rating": 5,
+      "date": "10 Dec 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Nike Jordan",
+      "productImage": "stock-img-02.png",
+      "name": "Antonio Engle",
+      "avatar": "user-11.jpg",
+      "review": "Stylish, durable, and incredibly comfortable",
+      "rating": 5,
+      "date": "27 Nov 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Apple Series 5 Watch",
+      "productImage": "stock-img-03.png",
+      "name": "Leo Kelly",
+      "avatar": "user-32.jpg",
+      "review": "Ultimate fitness and lifestyle companion!",
+      "rating": 5,
+      "date": "18 Nov 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Amazon Echo Dot",
+      "productImage": "stock-img-04.png",
+      "name": "Annette Walker",
+      "avatar": "user-02.jpg",
+      "review": "Perfect voice-controlled home assistant!",
+      "rating": 5,
+      "date": "06 Nov 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Sanford Chair Sofa",
+      "productImage": "stock-img-05.png",
+      "name": "John Weaver",
+      "avatar": "user-05.jpg",
+      "review": "Elegant design and superb comfort",
+      "rating": 5,
+      "date": "25 Oct 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Red Premium Satchel",
+      "productImage": "expire-product-01.png",
+      "name": "Gary Hennessy",
+      "avatar": "user-08.jpg",
+      "review": "perfect for work, travel, and everyday use",
+      "rating": 5,
+      "date": "14 Oct 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Iphone 14 Pro",
+      "productImage": "expire-product-02.png",
+      "name": "Eleanor Panek",
+      "avatar": "user-04.jpg",
+      "review": "Powerful performance and stunning display",
+      "rating": 5,
+      "date": "03 Oct 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Gaming Chair",
+      "productImage": "expire-product-03.png",
+      "name": "William Levy",
+      "avatar": "user-09.jpg",
+      "review": "Ergonomic and incredibly comfortable",
+      "rating": 5,
+      "date": "20 Sep 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Borealis Backpack",
+      "productImage": "expire-product-04.png",
+      "name": "Charlotte Klotz",
+      "avatar": "user-10.jpg",
+      "review": "Perfect for work, school and travel!",
+      "rating": 5,
+      "date": "10 Sep 2024",
+      "status": "Published"
+    },
+    {
+      "productName": "Borealis Backpack",
+      "productImage": "expire-product-04.png",
+      "name": "Charlotte Klotz",
+      "avatar": "user-10.jpg",
+      "review": "perfect for work, travel, and everyday use",
+      "rating": 5,
+      "date": "03 Oct 2024",
+      "status": "Published"
+    }
+  ],
+  "totalData": 11
+}

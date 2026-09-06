@@ -1,0 +1,14 @@
+.barcode-preview-wrapper {
+  display: flex;
+  justify-content: center;   // centre horizontalement
+  margin-top: 20px;
+}
+
+.barcode-preview-card {
+  border: 2px solid #333;   // cadre
+  padding: 20px;            // espace intérieur
+  border-radius: 8px;       // coins arrondis
+  text-align: center;        // centre texte et svg
+  background-color: #f9f9f9; // couleur légère du fond
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); // ombre légère
+}

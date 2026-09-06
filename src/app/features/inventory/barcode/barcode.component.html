@@ -1,0 +1,85 @@
+<div class="page-header">
+  <div class="add-item d-flex">
+    <div class="page-title">
+      <h4>Impression de code barre</h4>
+    </div>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <ul class="table-top-head">
+      <li>
+        <a data-bs-toggle="tooltip" matTooltip="Collapse" matTooltipPosition="above" data-bs-placement="top" id="collapse-header" (click)="toggleCollapse()" [class.active]="isCollapsed"> @if (!isCollapsed) {
+          <i class="ti ti-chevron-up"></i>
+        }
+        @if (isCollapsed) {
+          <i class="ti ti-chevron-up"></i>
+        }</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="barcode-content-list" [ngClass]="{'collapsed': isCollapsed}">
+  <form>
+    <div class="row mb-3">
+      <div class="col-lg-6 col-12">
+        <h6>Générer un code barre manuel</h6>
+        <br/>
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <label class="form-label">Type <span class="text-danger">*</span></label>
+            <mat-select [(ngModel)]="selectedValue1" [ngModelOptions]="{standalone: true}" placeholder="Choisir">
+              <mat-option *ngFor="let data of selectedList1" [value]="data.value">{{ data.value }}</mat-option>
+            </mat-select>
+          </div>
+
+          <div class="col-sm-6">
+            <label class="form-label">Département <span class="text-danger">*</span></label>
+            <mat-select [(ngModel)]="selectedValue2" [ngModelOptions]="{standalone: true}" placeholder="Choisir">
+              <mat-option *ngFor="let data of selectedList2" [value]="data.value">{{ data.value }}</mat-option>
+            </mat-select>
+          </div>
+        </div>
+<br/>
+        <h6 class="mt-4">Ou utiliser un code barre existant</h6>
+        <br/>
+        <div class="row">
+          <div class="col-sm-6">
+            <label class="form-label">Code barre<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Saisir un code barre"
+                   [(ngModel)]="searchDataValue"
+                   [ngModelOptions]="{standalone: true}"
+                   (ngModelChange)="searchData(searchDataValue)">
+          </div>
+        </div>
+      </div>
+
+      <div class="search-barcode-button">
+        <a href="javascript:void(0);" class="btn btn-submit me-2" data-bs-toggle="modal"
+          data-bs-target="#prints-barcode"  (click)="generateBarcode()">
+          <span><i class="fas fa-eye me-2"></i></span>
+        Générer le code barre</a>
+        <a href="javascript:void(0);" class="btn btn-danger"
+        (click)="printBarcode()">
+          <span><i class="fas fa-print me-2"></i></span>
+        Imprimer le code barre</a>
+      </div>
+      
+      
+      <!-- Affichage du code barre -->
+      <div *ngIf="generatedCode" class="barcode-preview-wrapper">
+        <div class="barcode-preview-card">
+          <ngx-barcode6
+            [bc-value]="generatedCode"
+            [bc-format]="'CODE128'"
+            [bc-display-value]="true"
+            [bc-width]="2"
+            [bc-height]="70">
+          </ngx-barcode6>
+        </div>
+      </div>
+
+
+    </div>
+  </form>
+</div>
